@@ -17,4 +17,8 @@ for kc in [0.1, 0.5, 0.9]:
     L = G*k1
     S = 1/(1 + L)
     plt.loglog(w, abs(S))
+plt.title('Control of plant with RHP-zero at z=1 using positive feedback')
+plt.xlabel('Frequency [rad/s]')
+plt.ylabel('Magnitude $|S|$')
+plt.legend(('Kc=0.1','Kc=0.5','Kc=0.9'),loc=1)
 plt.show()
