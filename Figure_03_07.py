@@ -19,7 +19,7 @@ processes = [[G1, '(a) Distillation process', -4, 1],
 plt.figure('Figure 3.7')
 for i, [G, title, minw, maxw] in enumerate(processes):
     plt.subplot(2, 2, i + 1)
-    plt.title(title)
+    plt.title('Typical plots of singular values')
     mimo_bode(G, minw, maxw)
     
     #this is an additional plot to the textbook
